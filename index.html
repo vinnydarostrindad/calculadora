@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    
+
+    <!-- 23 capítulos e 383 págs -->
+    <main class="container">
+        <div class="numcalc">
+            <div class="calc-area" id="digitos"></div>
+        </div>
+        <div class="tabela-num">
+            <div class="linha1">
+                <div class="calc-digit ce" onclick="cancelarRegistro()">CE</div>
+                <div class="calc-digit c" onclick="limparConta()">C</div>
+                <div class="calc-digit backspace" onclick="excluirUltimoDigito()"><i class="material-icons">backspace</i></div>
+                <div class="calc-digit dividir" onclick="dividir()">&divide;</div>
+            </div>
+            <div class="linha2">
+                <div class="calc-digit n7" onclick="valor(7)">7</div>
+                <div class="calc-digit n8" onclick="valor(8)">8</div>
+                <div class="calc-digit n9" onclick="valor(9)">9</div>
+                <div class="calc-digit vezes" onclick="multiplicar()">&times;</div>
+            </div>
+            <div class="linha2">
+                <div class="calc-digit n4" onclick="valor(4)">4</div>
+                <div class="calc-digit n5" onclick="valor(5)">5</div>
+                <div class="calc-digit n6" onclick="valor(6)">6</div>
+                <div class="calc-digit menus" onclick="subtrair()">&minus;</div>
+            </div>
+            <div class="linha3">
+                <div class="calc-digit n1" onclick="valor(1)">1</div>
+                <div class="calc-digit n2" onclick="valor(2)">2</div>
+                <div class="calc-digit n3" onclick="valor(3)">3</div>
+                <div class="calc-digit mais" onclick="somar()">&plus;</div>
+            </div>
+            <div class="linha5">
+                <div class="calc-digit virgula" onclick="valor(',')">,</div>
+                <div class="calc-digit n0" onclick="valor(0)">0</div>
+                <div class="calc-digit trocar-sinal" onclick="trocarSinal()">+/-</div>
+                <div class="calc-digit igual" onclick="calcular()">&equals;</div>
+            </div>
+        </div>    
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

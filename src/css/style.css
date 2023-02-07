@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(201, 201, 201);
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 26px auto;
+    max-width: 455px;
+    text-align: center;
+    border: 5px solid black;
+    background: white;
+}
+
+.numcalc {
+    height: 100px;
+}
+
+.numcalc .calc-area {
+    display: flex;  
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row-reverse;
+}
+
+.tabela-num >div {
+    display: flex;
+    background: rgb(235, 235, 235);
+    font-size: 50px;
+}
+
+.calc-digit {
+    border: 1px solid black;
+    padding: 20px 30px;
+    width: 100%;
+    max-height: 170px;
+    transition-duration: 75ms;
+}
+
+.calc-digit:hover {
+    background: rgb(139, 139, 139);
+}
+
+.ce {
+    font-size: 40px;
+    padding: 30px 26.8px;
+}
+
+.c {
+    padding: 30.2px;
+    font-size: 40px;
+}
+
+.trocar-sinal {
+    font-size: 35px;
+    padding: 30px;
+}
